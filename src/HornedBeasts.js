@@ -1,7 +1,9 @@
 import React from 'react';
-import './App.css';
+import './App.css'
 import Button from 'react-bootstrap/Button';
 import { AiFillHeart } from 'react-icons/ai';
+import Card from 'react-bootstrap/Card';
+// import CardDeck from 'react-bootstrap/CardDeck';
 
 class HornedBeasts extends React.Component {
   constructor(props) {
@@ -20,15 +22,18 @@ class HornedBeasts extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2>{this.props.name}</h2>
-        <img onClick={this.buttonClicked} className="animal-pictures" src={this.props.img_url} alt={this.props.keyword} title={this.props.title} />
-        <div><AiFillHeart />{this.state.numberOfHearts}</div>
-        <p>{this.props.description}</p>
-        <Button onClick={this.buttonClicked} variant="secondary" size="lg block">
-          Favorite Horned Beast!
-        </Button>
-      </div>
+      <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={this.props.image_url} style={{ width: '100%' }}/>
+        <Card.Body>
+          <Card.Title>{this.props.title}</Card.Title>
+          <Card.Text>
+            {this.props.description}<div><AiFillHeart />{this.state.numberOfHearts}</div>
+          </Card.Text>
+          <Button onClick={this.buttonClicked} variant="primary" size="lg block">
+            Favorite Horned Beast!
+            </Button>
+        </Card.Body>
+      </Card>
     );
   }
 }

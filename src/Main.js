@@ -1,15 +1,25 @@
 import React from 'react';
 import HornedBeasts from './HornedBeasts';
+import '.Main.css'
 
+import data from './data.json';
 
 class Main extends React.Component {
   render() {
+    let beastArray = data.map(animal => {
+        return <HornedBeasts
+        name = {animal.keyword}
+        title = {animal.title}
+        image_url = {animal.image_url}
+        description = {animal.description}
+        />
+    });
+
     return (
-      <main>
-        <HornedBeasts name='photo-1' title='xyz' imgUrl="https://via.placeholder.com/250" description='123' />
-        <HornedBeasts name='photo-2' title='xyz' imgUrl="https://via.placeholder.com/250" description='123' />
-        <HornedBeasts name='photo-3' title='xyz' imgUrl="https://via.placeholder.com/250" description='123' />
-      </main>)
+      <div>
+        {beastArray}
+      </div>
+    );
   }
 }
 

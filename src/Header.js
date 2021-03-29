@@ -2,8 +2,11 @@ import React from 'react';
 
 class Header extends React.Component {
   render() {
-    return (<h1>This is My Header</h1>)
+    return (
+      <header>
+        <h1>Select your Favorite Horned Beast</h1>
+      </header>)
   }
 }
 
-export default Header; 
+export default Header;

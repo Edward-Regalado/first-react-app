@@ -29,7 +29,7 @@ class HornedBeasts extends React.Component {
           <Card.Text>
             {this.props.description}<div><AiFillHeart />{this.state.numberOfHearts}</div>
           </Card.Text>
-          <Button variant="primary" size="lg block">
+          <Button variant="success" size="lg block">
             Favorite Horned Beast!
             </Button>
         </Card.Body>

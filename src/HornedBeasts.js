@@ -22,14 +22,14 @@ class HornedBeasts extends React.Component {
 
   render() {
     return (
-      <Card style={{ width: '18rem' }}>
+      <Card onClick={this.buttonClicked} style={{ width: '18rem' }}>
         <Card.Img variant="top" src={this.props.image_url} style={{ width: '100%' }}/>
         <Card.Body>
           <Card.Title>{this.props.title}</Card.Title>
           <Card.Text>
             {this.props.description}<div><AiFillHeart />{this.state.numberOfHearts}</div>
           </Card.Text>
-          <Button onClick={this.buttonClicked} variant="primary" size="lg block">
+          <Button variant="primary" size="lg block">
             Favorite Horned Beast!
             </Button>
         </Card.Body>

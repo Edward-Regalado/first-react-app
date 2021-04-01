@@ -13,6 +13,7 @@ class Main extends React.Component {
         title={animal.title}
         image_url={animal.image_url}
         description={animal.description}
+        handleClick={this.props.handleClick}
       />
     });
 

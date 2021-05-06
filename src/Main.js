@@ -2,7 +2,6 @@ import React from 'react';
 import CardColumns from 'react-bootstrap/CardColumns';
 import HornedBeasts from './HornedBeasts';
 
-
 class Main extends React.Component {
   render() {
     let beastArray = this.props.animals.map((animal, indexKeys) => {

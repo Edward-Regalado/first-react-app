@@ -7,12 +7,14 @@ import data from './data.json';
 
 class Main extends React.Component {
   render() {
-    let beastArray = data.map(animal => {
+    let beastArray = this.props.animals.map((animal, indexKeys) => {
       return <HornedBeasts
-        name={animal.keyword}
+        name = {animal.keyword}
         title={animal.title}
         image_url={animal.image_url}
         description={animal.description}
+        horns={animal.horns}
+        key={indexKeys}
         handleClick={this.props.handleClick}
       />
     });

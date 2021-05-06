@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  background: #FDC830;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F37335, #FDC830);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F37335, #FDC830);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.body p {
+  text-align: center;
+  font-size: calc(2px + 1vmin);
+  font-weight: 600;
+}
+
+.body {
+  padding: 30px;
+}
+
+img {
+ padding: 20px;
+ border-radius: 50px;
+}
+
+.footer {
+  background: #FDC830;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F37335, #FDC830);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F37335, #FDC830);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

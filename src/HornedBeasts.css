@@ -1,0 +1,33 @@
+.title {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  background: #00B4DB;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083B0, #00B4DB);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 30px;
+}
+
+.cardContainer {
+  margin-left: 10%;
+}
+
+.text {
+  text-align: center;
+  font-weight: 600;
+}
+
+.heart {
+  color: rgba(255, 0, 0, 0.753);
+}
+
+.footer {
+  color: white;
+  font-size: x-large;
+  display: flex;
+  justify-content: space-around;
+}
